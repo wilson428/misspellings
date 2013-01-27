@@ -1,18 +1,11 @@
-# README for a newly created project.
+Twitter misspellings
+======
 
-There are a couple of things you should do first, before you can use all of Git's power:
+Enter a name and search twitter to find instances in which it is misspelled.
 
-  * Add a remote to this project: in the Cloud9 IDE command line, you can execute the following commands
-    `git remote add [remote name] [remote url (eg. 'git@github.com:/ajaxorg/node_chat')]` [Enter]
-  * Create new files inside your project
-  * Add them to to Git by executing the following command
-    `git add [file1, file2, file3, ...]` [Enter]
-  * Create a commit which can be pushed to the remote you just added
-    `git commit -m 'added new files'` [Enter]
-  * Push the commit the remote
-    `git push [remote name] master` [Enter]
+Example:
+    python scripts/search.py --name=Barack+Obama --max=5
+    
+For each name, we make two searches: One for the correct first name followed by variants of the last name, and vice versa
+At the moment, a variant consists of any word that begins with the same letter as the correct name. In the future, it will include a more sophisticated Levenshtein distance
 
-That's it! If this doesn't work for you, please visit the excellent resources from [Github.com](http://help.github.com) and the [Pro Git](http://http://progit.org/book/) book.
-If you can't find your answers there, feel free to ask us via Twitter (@cloud9ide), [mailing list](groups.google.com/group/cloud9-ide) or IRC (#cloud9ide on freenode).
-
-Happy coding!
